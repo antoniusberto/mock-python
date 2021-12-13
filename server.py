@@ -4,6 +4,7 @@ import cgi
 from io import BytesIO
 
 
+
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def _set_headers(self):
         self.send_response(200)
