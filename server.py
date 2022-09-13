@@ -4,7 +4,8 @@ import cgi
 from io import BytesIO
 
 
-
+# Bertinho maravilhoso
+import so
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def _set_headers(self):
