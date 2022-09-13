@@ -15,6 +15,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         self._set_headers()
         self.wfile.write(bytes(json.dumps({'hello': 'world', 'received': 'ok'}, sort_keys=True),"utf-8"))
+        
 
     def do_POST(self):
         ctype, pdict = cgi.parse_header(self.headers['content-type'])
