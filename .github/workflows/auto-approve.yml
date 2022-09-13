@@ -8,3 +8,4 @@ jobs:
       pull-requests: write
     steps:
       - uses: hmarr/auto-approve-action@v2
+        if: github.actor == 'antoniusberto'
